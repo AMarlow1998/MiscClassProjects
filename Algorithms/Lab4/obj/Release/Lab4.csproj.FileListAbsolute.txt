@@ -1,0 +1,7 @@
+C:\Users\Avery\source\repos\Lab4\bin\Release\Lab4.exe.config
+C:\Users\Avery\source\repos\Lab4\bin\Release\Lab4.exe
+C:\Users\Avery\source\repos\Lab4\bin\Release\Lab4.pdb
+C:\Users\Avery\source\repos\Lab4\obj\Release\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Avery\source\repos\Lab4\obj\Release\Lab4.exe
+C:\Users\Avery\source\repos\Lab4\obj\Release\Lab4.pdb
+C:\Users\Avery\source\repos\Lab4\obj\Release\Lab4.csprojAssemblyReference.cache
