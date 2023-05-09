@@ -1,2 +1,0 @@
-Time used: 30.8131652 secs
-Number of Lines: 1915583
