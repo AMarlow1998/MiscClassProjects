@@ -1,0 +1,86 @@
+﻿//Avery Marlow
+//CSCI 3230
+//Lab 8.cs
+// 10-24-2020
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab8
+{
+    class Lab8
+    {
+        static void Main(string[] args)
+        {
+            //get user input
+            string strInputA;
+            string strInputB;
+            Console.WriteLine("Please enter a string");
+            strInputA = Console.ReadLine();
+            Console.WriteLine("Please enter another string");
+            strInputB = Console.ReadLine();
+            //call and display
+            string strOutput = FindLCS(strInputA, strInputB);
+            Console.WriteLine("The LCS between the two strings is" + strOutput);
+            Console.ReadLine();
+        }
+        //finds the Least Common Substring between two strings by analyzing them character by character.
+        static string FindLCS(string inputA, string inputB)
+        {
+            //store input as char arrays and declare return value
+            char[] A = inputA.ToCharArray();
+            char[] B = inputB.ToCharArray();
+            string strLCS = " ";
+            //create a table giving the lengths between each value
+            int[,] lengths = new int[A.Length + 1,B.Length + 1];
+            //then populate the array
+            for(int i = 0; i<=A.Length;i++)
+            {
+                for (int j = 0; j <= B.Length; j++)
+                {
+                    if (i == 0 || j == 0)
+                        lengths[i, j] = 0;
+                    else if (A[i - 1] == B[j - 1])
+                        lengths[i, j] = lengths[i - 1, j - 1] + 1;
+                    else
+                        lengths[i, j] = Math.Max(lengths[i - 1, j], lengths[i, j - 1]);
+                }
+            }
+            //create and clone an index for navigating the character array
+            int index = lengths[A.Length, B.Length];
+            int placeholder = index;
+            //initialize a char array that will store the LCS
+            char[] solution = new char[index + 1];
+            //store the lengths of each char array
+            int lengthA = A.Length;
+            int lengthB = B.Length;
+            //populate solution while decrementing indexes 
+            while(lengthA > 0 && lengthB > 0)
+            {
+                if (A[lengthA - 1] == B[lengthB - 1])
+                {
+                    solution[index - 1] = A[lengthA - 1];
+                    lengthA--;
+                    lengthB--;
+                    index--;
+                }
+                else if (lengths[lengthA - 1, lengthB] > lengths[lengthA, lengthB - 1])
+                {
+                    lengthA--;
+                }
+                else
+                    lengthB--;
+
+            }
+            //store the solution in a string and return
+            for(int i = 0; i<=placeholder;i++)
+            {
+                strLCS += solution[i];
+            }
+            return strLCS;
+
+        }
+    }
+}

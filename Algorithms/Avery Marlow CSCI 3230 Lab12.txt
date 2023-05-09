@@ -1,0 +1,34 @@
+﻿//Avery Marlow
+//CSCI 3230
+//11-23-2020
+//Lab 12
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab12
+{
+    class Lab12
+    {
+        static void Main(string[] args)
+        {
+            //get input
+            Console.WriteLine("Please enter how many strings to build");
+            int numStrings;
+            numStrings = int.Parse(Console.ReadLine());
+            //construct and populate string
+            StringBuilder sb = new StringBuilder("", numStrings);
+            for (int i = 0; i < numStrings; i++)
+            {
+                Console.WriteLine("Please enter a string.");
+                sb.Append(Console.ReadLine());
+            }
+            //print output
+            Console.WriteLine(sb.ToString());
+            Console.ReadLine();
+
+        }
+    }
+}

@@ -1,0 +1,67 @@
+﻿//Avery Marlow
+//CSCI 3230
+//Lab 11
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab11
+{
+    class Lab11
+    {
+        static void Main(string[] args)
+        {
+            //define our output, our sample string, and call our method
+            string output = "";
+            string P = "aaaaaabaaaaaaabaab";
+            int[] pi = ComputePrefix(P);
+            //populate output
+            for(int i = 0; i<pi.Length;i++)
+            {
+                output += pi[i]+ " ";
+            }
+            //print output
+            Console.WriteLine(output);
+        }
+        //finds the longest prefix in this string, usually used in KMP style string matching
+        public static int[] ComputePrefix(string P)
+        {
+            int PLength = P.Length; //store string length
+            char[] PArray = P.ToCharArray();    //break string into char array for easy navigation
+            int[] pi = new int[PLength];    //initialize our return value and set it equal to 0
+            pi[0] = 0;
+            int piLength = 0;  //tracks the length of the previous longest prefix
+            int index = 1;  //index used to navigate through the char array
+            //iterate for the length of the string
+            while(index < PLength)
+            {   
+                //increment the length and index the position that both point to are the same
+                //the array also gets the length at that position
+                if (PArray[piLength] == PArray[index])
+                {
+                    piLength++;
+                    pi[index] = piLength;
+                    index++;
+                }
+                else
+                {   
+                    //when the length is >0, update it to the value stored in the array at length-1
+                    if(piLength != 0)
+                    {
+                        piLength = pi[piLength - 1];
+                    }
+                    //if it is 0, add the length to array and increment the index 
+                    else
+                    {
+                        pi[index] = piLength;
+                        index++;
+                    }
+                }
+      
+            }
+            return pi;
+        }
+    }
+}
