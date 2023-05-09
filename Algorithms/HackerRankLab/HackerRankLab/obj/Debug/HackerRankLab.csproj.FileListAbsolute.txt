@@ -1,0 +1,7 @@
+C:\Users\Avery\source\repos\HackerRankLab\HackerRankLab\bin\Debug\HackerRankLab.exe.config
+C:\Users\Avery\source\repos\HackerRankLab\HackerRankLab\bin\Debug\HackerRankLab.exe
+C:\Users\Avery\source\repos\HackerRankLab\HackerRankLab\bin\Debug\HackerRankLab.pdb
+C:\Users\Avery\source\repos\HackerRankLab\HackerRankLab\obj\Debug\HackerRankLab.csprojAssemblyReference.cache
+C:\Users\Avery\source\repos\HackerRankLab\HackerRankLab\obj\Debug\HackerRankLab.csproj.CoreCompileInputs.cache
+C:\Users\Avery\source\repos\HackerRankLab\HackerRankLab\obj\Debug\HackerRankLab.exe
+C:\Users\Avery\source\repos\HackerRankLab\HackerRankLab\obj\Debug\HackerRankLab.pdb
