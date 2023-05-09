@@ -1,0 +1,7 @@
+C:\Users\Avery\source\repos\Lab3\bin\Release\Lab3.exe.config
+C:\Users\Avery\source\repos\Lab3\bin\Release\Lab3.exe
+C:\Users\Avery\source\repos\Lab3\bin\Release\Lab3.pdb
+C:\Users\Avery\source\repos\Lab3\obj\Release\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Avery\source\repos\Lab3\obj\Release\Lab3.exe
+C:\Users\Avery\source\repos\Lab3\obj\Release\Lab3.pdb
+C:\Users\Avery\source\repos\Lab3\obj\Release\Lab3.csprojAssemblyReference.cache
