@@ -1,7 +1,0 @@
-C:\Users\Avery\source\repos\Homework8\bin\Debug\Homework8.exe.config
-C:\Users\Avery\source\repos\Homework8\bin\Debug\Homework8.exe
-C:\Users\Avery\source\repos\Homework8\bin\Debug\Homework8.pdb
-C:\Users\Avery\source\repos\Homework8\obj\Debug\Homework8.csprojAssemblyReference.cache
-C:\Users\Avery\source\repos\Homework8\obj\Debug\Homework8.csproj.CoreCompileInputs.cache
-C:\Users\Avery\source\repos\Homework8\obj\Debug\Homework8.exe
-C:\Users\Avery\source\repos\Homework8\obj\Debug\Homework8.pdb
