@@ -1,0 +1,7 @@
+C:\Users\Avery\source\repos\Project3NoDupe\bin\Debug\Project3NoDupe.exe.config
+C:\Users\Avery\source\repos\Project3NoDupe\bin\Debug\Project3NoDupe.exe
+C:\Users\Avery\source\repos\Project3NoDupe\bin\Debug\Project3NoDupe.pdb
+C:\Users\Avery\source\repos\Project3NoDupe\obj\Debug\Project3NoDupe.csprojAssemblyReference.cache
+C:\Users\Avery\source\repos\Project3NoDupe\obj\Debug\Project3NoDupe.csproj.CoreCompileInputs.cache
+C:\Users\Avery\source\repos\Project3NoDupe\obj\Debug\Project3NoDupe.exe
+C:\Users\Avery\source\repos\Project3NoDupe\obj\Debug\Project3NoDupe.pdb
